@@ -179,7 +179,7 @@ Components: Author
 .c-author{
     display:flex;
     align-items:center;
-
+    box-sizing: border-box;
 }
 
 .c-author__image{
@@ -187,11 +187,13 @@ Components: Author
     height: 56px;
     border-radius: 100%;
     margin-right:16px;
+    box-sizing: border-box;
 }
 
 .c-author__name,
 .c-author__meta{
     margin-bottom:0;
+    box-sizing: border-box;
 }
 .c-author__meta{
     font-size:14px;
@@ -200,13 +202,19 @@ Components: Author
 
 .c-author__name{
     font-size:16px;
-    line-height:24px
+    line-height:24px;
+}
+
+.c-article{
+    box-sizing: border-box;
 }
 
 .c-article__header,
 .c-article__body{
     max-width: 1200px;
     margin: 0 auto;
+    box-sizing: border-box
+
 }
 
 .c-article__header{
@@ -216,6 +224,7 @@ Components: Author
 .c-article__body{
     padding: 0 24px;
 }
+
 
 /* Utilities: max-width */
 
@@ -267,6 +276,7 @@ Components: Author
     }
     .c-author__content{
         width:75%;
+        
     }
 
 }
