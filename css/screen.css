@@ -31,7 +31,13 @@ html {
     /* padding: 48px 24px 24px; */
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
-    box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 body {
@@ -187,13 +193,13 @@ Components: Author
     height: 56px;
     border-radius: 100%;
     margin-right:16px;
-    box-sizing: border-box;
+    /*zie na je html element: universal voor elk element gedefinieerd */
 }
 
 .c-author__name,
 .c-author__meta{
     margin-bottom:0;
-    box-sizing: border-box;
+  /*zie hierboven*/
 }
 .c-author__meta{
     font-size:14px;
@@ -205,16 +211,19 @@ Components: Author
     line-height:24px;
 }
 
-.c-article{
-    box-sizing: border-box;
-}
+/*commentaar toevoegen voor een nieuw component*/
+
+
+/*
+    Components: Article
+*/
+
 
 .c-article__header,
-.c-article__body{
+{
     max-width: 1200px;
     margin: 0 auto;
-    box-sizing: border-box
-
+   
 }
 
 .c-article__header{
